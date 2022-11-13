@@ -1,26 +1,34 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.shake_button {
+  animation: shake 5.82s cubic-bezier(.36, .07, .19, .97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
+@keyframes shake {
+0% {
+  transform: translate3d(0, 0, 0);
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+5% {
+  transform: translate3d(20px, 10px, 0);
+}
+10% {
+  transform: translate3d(0px, 0, 0);
+}
+15% {
+  transform: translate3d(-20px, 10px, 0);
+}
+20% {
+  transform: translate3d(0px, 0, 0);
+}
+100% {
+  transform: translate3d(0px, 0, 0);
+}
 }
