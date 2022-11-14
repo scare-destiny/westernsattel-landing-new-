@@ -1,6 +1,13 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import { Hero, Heading, Form, Features, Services } from '../components/index.js'
+import {
+	Hero,
+	Heading,
+	Form,
+	Features,
+	Services,
+	VideoPlayer,
+} from '../components/index.js'
 import heroImage from '../public/hero-image.webp'
 import heroImage2 from '../public/gallery5.webp'
 
@@ -40,6 +47,11 @@ KURZ, LEICHT UND JEDERZEIT ANPASSBAR'
 					buttonText='Preisliste runter laden'
 					bottomText='Deine Daten werden sicher & verschlüsselt übertragen 🔐
 					'
+				/>
+				<VideoPlayer
+					headingText='test'
+					sectionText='test2'
+					video='https://www.youtube.com/embed/Bcbbtt0YkH0'
 				/>
 				<Features />
 				<Hero image={heroImage2} width={608} height={321} priority={false} />
