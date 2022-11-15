@@ -31,8 +31,7 @@ Unsere Westernsättel sind verstellbar - auch später noch
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-
-			<main className='w-full'>
+			<main className='w-screen'>
 				<Hero image={heroImage} width={608} height={321} priority={true} />
 				<Heading
 					text='WESTERNSATTEL
@@ -48,15 +47,17 @@ KURZ, LEICHT UND JEDERZEIT ANPASSBAR'
 					bottomText='Deine Daten werden sicher & verschlüsselt übertragen 🔐
 					'
 				/>
-				<VideoPlayer
-					headingText='test'
-					sectionText='test2'
-					video='https://www.youtube.com/embed/Bcbbtt0YkH0'
-				/>
+				<VideoPlayer video='https://www.youtube.com/embed/Bcbbtt0YkH0' />
+
 				<Features />
 				<Hero image={heroImage2} width={608} height={321} priority={false} />
 				<Services />
 				<DynamicTestimonials />
+				<VideoPlayer
+					headingText='Leichter satteln ohne Kreuzschmerzen'
+					sectionText='Unsere Westernsättel sind leicht, weil wir schweres Holz mit Kunststoff ersetzen.'
+					video='https://www.youtube.com/watch?v=MkylRTPnkVQ'
+				/>
 				<Heading text='Make Profit with your own Solar Module Production Line' />
 				<Form
 					description=''

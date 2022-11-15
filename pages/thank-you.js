@@ -1,8 +1,15 @@
-import { Hero, Heading, Features, Banner, Info } from '../components/index'
+import {
+	Hero,
+	Heading,
+	Features,
+	Banner,
+	Info,
+	VideoPlayer,
+} from '../components/index'
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-import image from '../public/gallery4.webp'
+import image from '../public/gallery5.webp'
 
 const DynamicConfetti = dynamic(() => import('react-confetti'), {
 	ssr: false,
@@ -30,7 +37,7 @@ const ThankYou = () => {
 			</Suspense>
 
 			{/* <Confetti width={width} height={height} numberOfPieces={50} /> */}
-			<div className=' border-box pt-6 pl-2 pr-2 pb-6 mx-auto max-w-md sm:max-w-xl w-full md:max-w-3xl lg:max-w-4xl'>
+			<div className=' border-box pt-6 pb-6 mx-auto max-w-md sm:max-w-xl w-full md:max-w-3xl lg:max-w-4xl'>
 				{/* <SectionTitle
 					text='Thank you for your request! Your course will be emailed to you right away ⚡️
 '
@@ -50,6 +57,11 @@ const ThankYou = () => {
 					/>
 
 					<Features />
+					<VideoPlayer
+						headingText='Ein Sattel ein Pferdeleben lang'
+						sectionText='Unsere Saettel werden auf Maß an das Pferd angepasst - auch späte noch, wenn sich das Pferd verändert:'
+						video='https://www.youtube.com/watch?v=GBtIThgwU3o'
+					/>
 					<Banner
 						heading='	Still Not Sure?'
 						strongHeading='			 Let Us Know.'

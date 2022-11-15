@@ -12,19 +12,16 @@ const VideoPlayer = ({
 	playing,
 }) => {
 	return (
-		<div className='w-full border-box pt-2  pb-2 pl-2 pr-2 '>
-			<div className='mx-auto max-w-xl'>
-				<Heading text={headingText} />
-				<SectionTitle text={sectionText} />
-				<iframe
-					width='560'
-					height='315'
-					src='https://www.youtube.com/embed/Bcbbtt0YkH0'
-					title='YouTube video player'
-					frameborder='0'
-					allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-					allowfullscreen
-				></iframe>
+		<div className='pb-6 border-box pt-6  mx-auto max-w-md sm:max-w-xl w-full md:max-w-3xl lg:max-w-4xl'>
+			<Heading text={headingText} />
+			<SectionTitle text={sectionText} />
+			<div className='player-wrapper'>
+				<ReactPlayer
+					url={video}
+					className='react-player'
+					width='100%'
+					height='100%'
+				/>
 			</div>
 		</div>
 	)
