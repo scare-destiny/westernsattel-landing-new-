@@ -62,6 +62,7 @@ const CookieBanner = ({ modalHeader, modalText }) => {
 		acceptAllCookies()
 		onClose()
 		generateClientConsentCookie()
+		location.reload()
 	}
 
 	const handleAllCookiesDecline = () => {
@@ -69,6 +70,7 @@ const CookieBanner = ({ modalHeader, modalText }) => {
 		acceptCookies({ necessary: true })
 		onClose()
 		generateClientConsentCookie()
+		location.reload()
 	}
 
 	return (

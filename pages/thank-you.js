@@ -3,8 +3,9 @@ import {
 	Heading,
 	Features,
 	Banner,
-	Info,
 	VideoPlayer,
+	Marquee,
+	Animation,
 } from '../components/index'
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
@@ -42,35 +43,46 @@ const ThankYou = () => {
 					text='Thank you for your request! Your course will be emailed to you right away ⚡️
 '
 				/> */}
-				<Heading text='Thank you for your request! Your course will be emailed to you right away ⚡️' />
+				<Animation>
+					<Heading text='Vielen Dank, dass Sie die Preisliste angefordert haben, sie wird Ihnen sofort zugesandt ⚡️' />
+				</Animation>
 				<div className='w-full border-box pt-2 pl-4 pr-4 pb-10mx-auto max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-4xl text-center'>
-					<Hero image={image} priority={true} />
-					<Banner
-						heading='	Ready To Start?'
-						strongHeading='			 Send Us Request Right Now.'
-						// text='Tailor-made services and high-level performance made for you.'
-						buttonText='Send Request'
-						formLabelText='The solar industry offers many opportunities and right now it makes
-						extremely good sense to enter the solar production sector - in fact,
-						chances have never been better!'
-						placeholder='Hello, I need a complete solar plant for 4Mw... '
-					/>
+					<Animation>
+						<Hero image={image} priority={true} />
+					</Animation>
+					<Animation>
+						<Banner
+							heading='	Haben Sie Interesse an einem unserer Sattelmodelle?'
+							strongHeading='			 Jetzt unverbindlich beraten lassen.'
+							// text='Tailor-made services and high-level performance made for you.'
+							buttonText='Anfrage Senden'
+							formLabelText='Sie interessieren sich für eines unserer Sattel-Modelle und haben jetzt natürlich noch viele Fragen, die Sie vorab gerne mit uns klären möchten? 
 
-					<Features />
+							Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!'
+							placeholder='Ich suche einen Sattel für... '
+						/>
+					</Animation>
+					<Animation>
+						<Features />
+					</Animation>
 					<VideoPlayer
 						headingText='Ein Sattel ein Pferdeleben lang'
 						sectionText='Unsere Saettel werden auf Maß an das Pferd angepasst - auch späte noch, wenn sich das Pferd verändert:'
 						video='https://www.youtube.com/watch?v=GBtIThgwU3o'
 					/>
-					<Banner
-						heading='	Still Not Sure?'
-						strongHeading='			 Let Us Know.'
-						// text='Tailor-made services and high-level performance made for you.'
-						buttonText='Send My Question'
-						formLabelText="We'll answer all your questions!"
-						placeholder='I want to start a solar module production line, but need help and expertise...'
-					/>
-					<Info />
+					<Animation>
+						<Marquee />
+					</Animation>
+					<Animation>
+						<Banner
+							heading='	Haben Sie Fragen?'
+							strongHeading='			 Lassen Sie es uns wissen.'
+							// text='Tailor-made services and high-level performance made for you.'
+							buttonText='Anfrage Senden'
+							formLabelText='Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!'
+							placeholder='Ich habe eine Frage zu Ihren Sätteln...'
+						/>
+					</Animation>
 				</div>
 			</div>
 		</div>

@@ -4,38 +4,37 @@ import Feature from '../components/Feature'
 const Features = () => {
 	return (
 		<>
-			<SectionTitle text='Solar Panels for Hot Areas ☀️' />
 			<Heading
-				text='We are the Inventor of the Original DESERT Technology
+				text='Über uns
 '
 			/>
+			<SectionTitle text='J.v.G. Saddle Innovations ist ein Familienunternehmen - bereits seit 1999 werden unter der Marke Iberosattel eigene Sättel entwickelt.' />
 			<div className='w-full border-box pt-6 pl-6 pr-6 pb-6'>
 				<div className='mx-auto max-w-md sm:max-w-xl w-full md:max-w-3xl lg:max-w-4xl'>
 					<div className='grid text-left grid-cols-1 gap-8 md:grid-cols-2'>
 						<Feature
-							icon='🌍'
+							icon='🛠'
 							strongText='
-							90% of all panels wich are older than 12 years are installed in the mid of Europe / Germany.  '
-							text=' This means all long term experiences with normal panels are made in moderate climates (0-25° C).'
+							Individuelle Anpassung und Fertigung. '
+							text='Das Ergebnis: Ein technisch innovativer, von Hand gefertigter und individuell an Sie angepasster Sattel.'
 						/>
 						<Feature
-							icon='🌇'
+							icon='🏡'
 							strongText='
-							The J.v.G. Thoma DESERT solar panel is the only panel with a long term experience. '
-							text='Over 10 years research, development and more than 5 years in mass production.'
+							Handmade in unserer Manufaktur. '
+							text='Schon seit 1999 fertigen wir Sättel für passionierte und professionelle Reiter.'
 						/>
 						<Feature
-							icon='🌝'
+							icon='🏇'
 							strongText='
-							Our turnkey production is flexible for all types and all sizes. '
-							text=' Also highly flexible for panel size.'
+							Immer wieder neu anpassbar. '
+							text=' Alle von uns gefertigten Sättel können sie jederzeit neu auf Ihr Pferd anpassen lassen.'
 						/>
 						<Feature
-							icon='👩‍🏫'
+							icon='🐎'
 							strongText='
-							We teach you step by step how to invest in solar module production '
-							text='No knowledge needed, we are your partner for the whole project.
-							'
+							Klassische Westernsättel für Turnier oder Freizeit – sagen Sie uns, was Sie brauchen. '
+							text='Wir bauen Sättel für jeden Anspruch und jedes Reiter-Pferd-Team, auf Maß und immer individuell angepasst (auch Sonderwünsche).'
 						/>
 					</div>
 				</div>

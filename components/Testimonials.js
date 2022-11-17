@@ -5,7 +5,7 @@ const Testimonials = () => {
 				<div className='items-end sm:flex justify-center text-center'>
 					<div className='max-w-xl'>
 						<h2 className='text-4xl font-bold tracking-tight  sm:text-5xl'>
-							What Our Customers Say
+							Das sagen unsere Kunden
 						</h2>
 					</div>
 				</div>
@@ -57,18 +57,17 @@ const Testimonials = () => {
 
 							<div className='mt-4'>
 								<h5 className='text-xl font-bold text-textColor sm:text-2xl'>
-									Patrick Answered Every Question I Had
+									Mein Pony und ich sind sehr happy damit!
 								</h5>
 
 								<p className='mt-4 text-gray-600'>
-									For me solar business was completely new, so I had to get the full
-									picture of this business. Patrick never gave me the feeling that my
-									questions are stupid and I got an answer to every problem.
+									Super Sattel! Mein Pony und ich sind sehr happy damit! Danke auch an
+									Sonja für die tolle Beratung!
 								</p>
 							</div>
 						</div>
 
-						<footer className='mt-8 text-gray-500'>Mohammed S.</footer>
+						<footer className='mt-8 text-gray-500'>Veronika L</footer>
 					</blockquote>
 
 					<blockquote className='flex flex-col justify-between h-full p-6 bg-white'>
@@ -118,17 +117,17 @@ const Testimonials = () => {
 
 							<div className='mt-4'>
 								<h5 className='text-xl font-bold text-textColor sm:text-2xl'>
-									Quality service. Quality products. Quality people.
+									Wir fühlen uns extrem wohl damit!
 								</h5>
 
 								<p className='mt-4 text-gray-600'>
-									I had a great experience with the company doing business and i would do
-									business again with them.
+									Super Beratung, top Sattel für Reiter und Pferd! Wir fühlen uns extrem
+									wohl damit!!!
 								</p>
 							</div>
 						</div>
 
-						<footer className='mt-8 text-gray-500'>Juan Manuel Mora</footer>
+						<footer className='mt-8 text-gray-500'>Petra Perle</footer>
 					</blockquote>
 
 					<blockquote className='flex flex-col justify-between h-full p-6 bg-white'>
@@ -178,17 +177,18 @@ const Testimonials = () => {
 
 							<div className='mt-4'>
 								<h5 className='text-xl font-bold text-textColor sm:text-2xl'>
-									VERY DETAILED INFORMATION
+									Meine Stute läuft so viel lockerer.
 								</h5>
 
 								<p className='mt-4 text-gray-600'>
-									The information was very detailed and I got answers to every question I
-									had. I liked the direct WhatsApp support. Thanks a lot!!!
+									Tolles Sattelkonzept, hochwertige Ausführung. Meine Stute läuft so viel
+									lockerer und ich bin absolut begeistert von der
+									Fender-/Steigbügelausführung.
 								</p>
 							</div>
 						</div>
 
-						<footer className='mt-8 text-gray-500'>Tirdat Hofmann</footer>
+						<footer className='mt-8 text-gray-500'>Julia K.</footer>
 					</blockquote>
 
 					<blockquote className='flex flex-col justify-between h-full p-6 bg-white'>
@@ -238,20 +238,20 @@ const Testimonials = () => {
 
 							<div className='mt-4'>
 								<h5 className='text-xl font-bold text-textColor sm:text-2xl'>
-									Place to go for partnership, turn-key production factory and for any
-									quality solar installations
+									Nach 10 Jahren Sattelsuche wurde mir ein Sattelkonzept vorgestellt, was
+									mich überzeugt
 								</h5>
 
 								<p className='mt-4 text-gray-600'>
-									J.v.G technology is a company to trust with their tech know how and
-									with their first class High Tech Equipments, Quality Experienced
-									professionals is a place to go for partnership, turn-key production
-									factory and for any quality solar installations
+									Nach 10 Jahren Sattelsuche wurde mir ein Sattelkonzept vorgestellt, was
+									mich überzeugt. Es war ein entspannter, kompetenter und netter Termin.
+									Auf jede Frage bekam ich eine Antwort die das Fachwissen
+									wiederspiegelte, ohne dabei überheblich zu erscheinen.
 								</p>
 							</div>
 						</div>
 
-						<footer className='mt-8 text-gray-500'>Uzoma Samson</footer>
+						<footer className='mt-8 text-gray-500'>Birgit Engler</footer>
 					</blockquote>
 				</div>
 			</div>

@@ -26,8 +26,8 @@ const Form = ({
 						<form
 							method='POST'
 							action='https://ingbrohansthoma.activehosted.com/proc.php'
-							id='_form_121_'
-							className='sm:mt-2 max-w-2xl _form _form_121 _inline-form  _dark'
+							id='_form_130_'
+							clasName='_form _form_130 _inline-form '
 						>
 							<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg'>
 								<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
@@ -69,8 +69,8 @@ const Form = ({
 											<h4 className='text-black font-extralight leading-5 text-sm break-words'>
 												{acceptPrivacyPlaceholder}
 											</h4>
-											<input type='hidden' name='u' value='121' />
-											<input type='hidden' name='f' value='121' />
+											<input type='hidden' name='u' value='130' />
+											<input type='hidden' name='f' value='130' />
 											<input type='hidden' name='s' />
 											<input type='hidden' name='c' value='0' />
 											<input type='hidden' name='m' value='0' />
@@ -79,7 +79,7 @@ const Form = ({
 											<input
 												type='hidden'
 												name='or'
-												value='995ac286ea3b29a058eaf0af6bcece89'
+												value='dbb9bf22f698f8c8b852b9551f423297'
 											/>
 										</div>
 									</div>
