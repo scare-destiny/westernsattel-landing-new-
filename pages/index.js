@@ -53,7 +53,10 @@ Unsere Westernsättel sind verstellbar - auch später noch
 					/>
 				</Animation>
 				<Animation>
-					<VideoPlayer video='https://www.youtube.com/embed/Bcbbtt0YkH0' />
+					<VideoPlayer
+						video='https://www.youtube.com/embed/Bcbbtt0YkH0'
+						light={true}
+					/>
 				</Animation>
 				<Animation>
 					<Features />
@@ -72,6 +75,7 @@ Unsere Westernsättel sind verstellbar - auch später noch
 						headingText='Leichter satteln ohne Kreuzschmerzen'
 						sectionText='Unsere Westernsättel sind leicht, weil wir schweres Holz mit Kunststoff ersetzen.'
 						video='https://www.youtube.com/watch?v=MkylRTPnkVQ'
+						light={true}
 					/>
 				</Animation>
 				<Animation>

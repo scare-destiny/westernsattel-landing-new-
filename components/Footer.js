@@ -32,7 +32,12 @@ const Footer = () => {
 					</div>
 				</nav>
 				<div className='flex justify-center mt-8 space-x-6'>
-					<a href='#' className='text-gray-400 hover:text-gray-500'>
+					<a
+						href='https://www.facebook.com/Westernsattel.de/'
+						target='_blank'
+						rel='noreferrer'
+						className='text-gray-400 hover:text-gray-500'
+					>
 						<span className='sr-only'>Facebook</span>
 						<svg
 							className='w-6 h-6'

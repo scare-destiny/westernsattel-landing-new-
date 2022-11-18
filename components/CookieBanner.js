@@ -120,7 +120,13 @@ const CookieBanner = ({ modalHeader, modalText }) => {
 											</Flex>
 										</AccordionButton>
 									</h2>
-									<AccordionPanel pb={4}></AccordionPanel>
+									<AccordionPanel pb={4}>
+										Diese Cookies sind unerlässlich, damit Sie die Website nutzen und ihre
+										Funktionen nutzen können. Sie können nicht abgeschaltet werden. Sie
+										werden als Antwort auf Anfragen von Ihnen gesetzt, wie z.B. das
+										Einstellen Ihrer Datenschutzeinstellungen, das Einloggen oder das
+										Ausfüllen von Formularen.
+									</AccordionPanel>
 								</AccordionItem>
 							</Accordion>
 						</HStack>
@@ -142,7 +148,11 @@ const CookieBanner = ({ modalHeader, modalText }) => {
 											</Flex>
 										</AccordionButton>
 									</h2>
-									<AccordionPanel pb={4}></AccordionPanel>
+									<AccordionPanel pb={4}>
+										Diese Cookies werden verwendet um externe Medien auf dieser Website
+										(in dem Funnel) anzuzeigen und somit Content bereitzustellen. Hierbei
+										handelt es sich um Third-Party-Cookies.
+									</AccordionPanel>
 								</AccordionItem>
 							</Accordion>
 						</HStack>

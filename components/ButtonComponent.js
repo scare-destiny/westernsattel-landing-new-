@@ -11,6 +11,9 @@ const ButtonComponent = ({ buttonText }) => {
 				 bg-buttonBgColor
 				 hover:bg-buttonBgColorDark
 				 '
+				onClick={() => {
+					console.log('test')
+				}}
 			>
 				{buttonText}
 			</button>

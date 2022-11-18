@@ -69,6 +69,7 @@ const ThankYou = () => {
 						headingText='Ein Sattel ein Pferdeleben lang'
 						sectionText='Unsere Saettel werden auf Maß an das Pferd angepasst - auch späte noch, wenn sich das Pferd verändert:'
 						video='https://www.youtube.com/watch?v=GBtIThgwU3o'
+						light={true}
 					/>
 					<Animation>
 						<Marquee />

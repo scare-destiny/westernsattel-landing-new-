@@ -27,7 +27,7 @@ const Form = ({
 							method='POST'
 							action='https://ingbrohansthoma.activehosted.com/proc.php'
 							id='_form_130_'
-							clasName='_form _form_130 _inline-form '
+							className='_form _form_130 _inline-form '
 						>
 							<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg'>
 								<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
@@ -79,7 +79,7 @@ const Form = ({
 											<input
 												type='hidden'
 												name='or'
-												value='dbb9bf22f698f8c8b852b9551f423297'
+												value='26957fcb0b64f100bc53f40a2c79facd'
 											/>
 										</div>
 									</div>
