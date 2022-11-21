@@ -21,7 +21,7 @@ module.exports = {
 		extend: {
 			colors: {
 				textColor: '#343435',
-				sectionTitleColor: '#B81513',
+				sectionTitleColor: '#424242',
 				linkColor: '#2542aa',
 				buttonColor: '#F5F5F5',
 				buttonBgColor: '#FF0000',

@@ -1,7 +1,7 @@
 const Testimonials = () => {
 	return (
 		<section className='bg' id='referenzen'>
-			<div className='px-2 py-6 mx-auto max-w-screen-2xl sm:px-6 lg:px-8'>
+			<div className='px-2 py-2 mx-auto max-w-screen-2xl sm:px-6 lg:px-8'>
 				<div className='items-end sm:flex justify-center text-center'>
 					<div className='max-w-xl'>
 						<h2 className='text-4xl font-bold tracking-tight  sm:text-5xl'>

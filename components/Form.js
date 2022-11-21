@@ -10,13 +10,13 @@ const Form = ({
 }) => {
 	return (
 		<>
-			<div className='formContainer w-full border-box pt-4 pl-6 pr-6 pb-4'>
+			<div className='formContainer w-full border-box pt-2 pl-6 pr-6 pb-2'>
 				<div className='mx-auto max-w-xl sm:max-w-xl w-full'>
 					<div>
 						<div className='w-full border-box pb-2 '>
 							<div className='mx-auto max-w-md sm:max-w-xl w-full md:max-w-3xl lg:max-w-4xl'>
 								<div>
-									<div className='wrapper max-w-md sm:max-w-xl w-full md:max-w-3xl lg:max-w-4xl text-center'>
+									<div className='wrapper max-w-md sm:max-w-xl w-full md:max-w-3xl lg:max-w-4xl pb-2 text-center'>
 										<h4 className='text-l'></h4>
 										{description} <strong>{strongDescription} </strong>
 									</div>
@@ -87,7 +87,7 @@ const Form = ({
 							</div>
 							<ButtonComponent buttonText={buttonText} />
 						</form>
-						<div className='w-full border-box pt-6 pl-8 pr-8 pb-2 mx-auto max-w-md sm:max-w-xl  md:max-w-4xl lg:max-w-5xl'>
+						<div className='w-full border-box pt-2 pl-8 pr-8 pb-2 mx-auto max-w-md sm:max-w-xl  md:max-w-4xl lg:max-w-5xl'>
 							<div className='break-words text-center'>
 								<h4>{bottomText}</h4>
 							</div>

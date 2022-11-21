@@ -10,9 +10,10 @@ import {
 	useColorModeValue,
 } from '@chakra-ui/react'
 import Image from 'next/image'
-import { MdArchitecture } from 'react-icons/md'
-import { BiPhotoAlbum } from 'react-icons/bi'
-import { SiCoronarenderer } from 'react-icons/si'
+import { MdOutlineContactSupport } from 'react-icons/md'
+import { TiInfoLarge } from 'react-icons/ti'
+import { IoPricetagOutline } from 'react-icons/io'
+import { AiFillTag } from 'react-icons/ai'
 import { GiSelfLove } from 'react-icons/gi'
 import image from '../public/gallery2.webp'
 
@@ -34,10 +35,10 @@ const Feature = ({ text, icon, iconBg }) => {
 	)
 }
 
-const Features = () => {
+const Info = () => {
 	return (
-		<Container maxW={'8xl'} py={12}>
-			<SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+		<Container maxW={'8xl'} py={2}>
+			<SimpleGrid columns={{ base: 1, md: 2 }} spacing={5}>
 				<Stack spacing={4}>
 					<Text
 						textTransform={'uppercase'}
@@ -62,17 +63,19 @@ const Features = () => {
 						}
 					>
 						<Feature
-							icon={<Icon as={MdArchitecture} color={'red.500'} w={5} h={5} />}
+							icon={
+								<Icon as={MdOutlineContactSupport} color={'red.500'} w={5} h={5} />
+							}
 							iconBg={useColorModeValue('red.100', 'red.900')}
 							text={'Weitere Informationen über die Vorteile unserer Sättel'}
 						/>
 						<Feature
-							icon={<Icon as={BiPhotoAlbum} color={'red.500'} w={5} h={5} />}
+							icon={<Icon as={TiInfoLarge} color={'red.500'} w={5} h={5} />}
 							iconBg={useColorModeValue('red.100', 'red.900')}
 							text={'Aktuelle Informationen über J. v. G. Saddle Innovations'}
 						/>
 						<Feature
-							icon={<Icon as={SiCoronarenderer} color={'red.500'} w={5} h={5} />}
+							icon={<Icon as={AiFillTag} color={'red.500'} w={5} h={5} />}
 							iconBg={useColorModeValue('red.100', 'red.900')}
 							text={'Unsere Preisliste und Flyer als Download'}
 						/>
@@ -98,4 +101,4 @@ const Features = () => {
 	)
 }
 
-export default Features
+export default Info

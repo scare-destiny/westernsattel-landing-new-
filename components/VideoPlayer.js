@@ -15,9 +15,11 @@ const VideoPlayer = ({
 }) => {
 	return (
 		<>
-			<Heading text={headingText} />
-			<SectionTitle text={sectionText} />
-			<div className='border-box  pb-6 mx-auto max-w-md  w-full  lg:max-w-4xl'>
+			{headingText
+				? // eslint-disable-next-line react/jsx-key
+				  [<Heading text={headingText} />, <SectionTitle text={sectionText} />]
+				: null}
+			<div className='border-box  pb-2 mx-auto max-w-md  w-full  lg:max-w-4xl'>
 				<div className='player-wrapper'>
 					<ReactPlayer
 						url={video}
@@ -25,6 +27,7 @@ const VideoPlayer = ({
 						width='100%'
 						height='100%'
 						light={light}
+						controls={true}
 					/>
 				</div>
 			</div>

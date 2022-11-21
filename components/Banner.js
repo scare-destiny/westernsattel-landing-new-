@@ -44,7 +44,9 @@ const Banner = ({
 					focusBorderColor='blue.300'
 					isRequired
 				/>
-				<ShakingButton buttonText={buttonText} />
+				<div className=' w-full border-box pt-2 pl-6 pr-6 pb-2'>
+					<ShakingButton buttonText={buttonText} />
+				</div>
 				<FormLabel py={2} textAlign='center'>
 					{formLabelText}
 				</FormLabel>

@@ -9,14 +9,14 @@ import ButtonComponent from './ButtonComponent'
 const Services = () => {
 	return (
 		<section className='text-gray-600 body-font'>
-			<div className='w-full container py-5 mx-auto'>
-				<div className='text-center pb-2'>
+			<div className='w-full container py-2 mx-auto'>
+				<div className='text-center pb-2 break-words'>
 					<Heading
 						text='
 						Unsere Westernsättel sind verstellbar - auch später noch
 '
 					/>
-					<p className='text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-sectionTitleColor'>
+					<p className='text-xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-sectionTitleColor'>
 						Ein technisch innovativer, von Hand gefertigter und individuell an Sie
 						angepasster Sattel.
 					</p>
@@ -55,7 +55,9 @@ const Services = () => {
 						</div>
 					</div>
 				</div>
-				<ButtonComponent buttonText='Preisliste runter laden' />
+				<div className='formContainer w-full border-box pt-2 pl-6 pr-6 pb-2'>
+					<ButtonComponent buttonText='Preisliste runter laden' />
+				</div>
 			</div>
 		</section>
 	)

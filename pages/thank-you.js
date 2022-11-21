@@ -6,6 +6,7 @@ import {
 	VideoPlayer,
 	Marquee,
 	Animation,
+	Product,
 } from '../components/index'
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
@@ -46,7 +47,7 @@ const ThankYou = () => {
 				<Animation>
 					<Heading text='Vielen Dank, dass Sie die Preisliste angefordert haben, sie wird Ihnen sofort zugesandt ⚡️' />
 				</Animation>
-				<div className='w-full border-box pt-2 pl-4 pr-4 pb-10mx-auto max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-4xl text-center'>
+				<div className='w-full border-box  pb-10mx-auto max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-4xl text-center'>
 					<Animation>
 						<Hero image={image} priority={true} />
 					</Animation>
@@ -56,9 +57,8 @@ const ThankYou = () => {
 							strongHeading='			 Jetzt unverbindlich beraten lassen.'
 							// text='Tailor-made services and high-level performance made for you.'
 							buttonText='Anfrage Senden'
-							formLabelText='Sie interessieren sich für eines unserer Sattel-Modelle und haben jetzt natürlich noch viele Fragen, die Sie vorab gerne mit uns klären möchten? 
-
-							Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!'
+							formLabelText='Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!
+							'
 							placeholder='Ich suche einen Sattel für... '
 						/>
 					</Animation>
@@ -71,9 +71,9 @@ const ThankYou = () => {
 						video='https://www.youtube.com/watch?v=GBtIThgwU3o'
 						light={true}
 					/>
-					<Animation>
+					{/* <Animation>
 						<Marquee />
-					</Animation>
+					</Animation> */}
 					<Animation>
 						<Banner
 							heading='	Haben Sie Fragen?'
@@ -84,6 +84,7 @@ const ThankYou = () => {
 							placeholder='Ich habe eine Frage zu Ihren Sätteln...'
 						/>
 					</Animation>
+					{/* <Product /> */}
 				</div>
 			</div>
 		</div>
