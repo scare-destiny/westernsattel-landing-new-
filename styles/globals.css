@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
 
 .player-wrapper {
   position: relative;
