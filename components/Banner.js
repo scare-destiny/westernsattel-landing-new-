@@ -38,7 +38,7 @@ const Banner = ({
 					<p className=' sm:text-xl sm:leading-relaxed'>{text}</p>
 				</div>
 			</div>
-			<FormControl py={1}>
+			<FormControl py={2}>
 				<Textarea
 					placeholder={placeholder}
 					focusBorderColor='blue.300'
@@ -47,7 +47,7 @@ const Banner = ({
 				<div className=' w-full border-box pt-2 pl-6 pr-6 pb-2'>
 					<ShakingButton buttonText={buttonText} />
 				</div>
-				<FormLabel py={2} textAlign='center'>
+				<FormLabel textAlign='center' py={1}>
 					{formLabelText}
 				</FormLabel>
 			</FormControl>

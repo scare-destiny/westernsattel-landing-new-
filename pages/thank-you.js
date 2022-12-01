@@ -6,12 +6,14 @@ import {
 	VideoPlayer,
 	Marquee,
 	Animation,
+	BackgroundImage,
 	Product,
 } from '../components/index'
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import image from '../public/gallery5.webp'
+import enduranceImage from '../public/endurance-saddle.webp'
 
 const DynamicConfetti = dynamic(() => import('react-confetti'), {
 	ssr: false,
@@ -62,6 +64,13 @@ const ThankYou = () => {
 							placeholder='Ich suche einen Sattel für... '
 						/>
 					</Animation>
+					<BackgroundImage
+						image={enduranceImage}
+						alt='le jardin shop'
+						backgroundPosition={'center center'}
+						objectPosition='right'
+						priority={true}
+					/>
 					<Animation>
 						<Features />
 					</Animation>
