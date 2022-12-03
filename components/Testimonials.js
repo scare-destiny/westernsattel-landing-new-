@@ -12,7 +12,7 @@ const Testimonials = () => {
 				<div className='mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2'>
 					<blockquote className='flex flex-col justify-between h-full p-6 bg-white'>
 						<div>
-							<div className='flex space-x-0.5 text-green-500'>
+							<div className='flex space-x-0.5 text-red-500'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									className='w-6 h-6'
@@ -72,7 +72,7 @@ const Testimonials = () => {
 
 					<blockquote className='flex flex-col justify-between h-full p-6 bg-white'>
 						<div>
-							<div className='flex space-x-0.5 text-green-500'>
+							<div className='flex space-x-0.5 text-red-500'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									className='w-6 h-6'
@@ -132,7 +132,7 @@ const Testimonials = () => {
 
 					<blockquote className='flex flex-col justify-between h-full p-6 bg-white'>
 						<div>
-							<div className='flex space-x-0.5 text-green-500'>
+							<div className='flex space-x-0.5 text-red-500'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									className='w-6 h-6'
@@ -193,7 +193,7 @@ const Testimonials = () => {
 
 					<blockquote className='flex flex-col justify-between h-full p-6 bg-white'>
 						<div>
-							<div className='flex space-x-0.5 text-green-500'>
+							<div className='flex space-x-0.5 text-red-500'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									className='w-6 h-6'

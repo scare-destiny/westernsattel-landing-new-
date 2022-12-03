@@ -62,9 +62,7 @@ body {
 
 .container-marquee {
 	min-height: 15vh;
-
 	--space: 1rem;
-
 	display: grid;
 	align-content: center;
 	overflow: hidden;
@@ -80,9 +78,8 @@ body {
 
 
 .marquee {
-	--duration: 60s;
+	--duration: 15s;
 	--gap: var(--space);
-
 	display: flex;
 	overflow: hidden;
 	user-select: none;
@@ -90,9 +87,11 @@ body {
 
 }
 
+
+
 @media screen and (max-width: 400px) {
 	.marquee img{
-		min-height: 15vh;
+		min-height: 25vh;
 	}
 }
 
@@ -113,9 +112,18 @@ body {
 }
 
 .marquee__group img {
-	max-width: clamp(10rem, 1rem + 28vmin, 25rem);
+	max-width: clamp(15rem, 1rem + 28vmin, 25rem);
 	aspect-ratio: 1.4;
 	object-fit: cover;
+}
+
+.image_wrapper {
+	position: relative;
+}
+
+.image_wrapper p {
+	position: absolute;
+	color: white;
 }
 
 .marquee--reverse .marquee__group {
@@ -138,6 +146,6 @@ body {
 		width: fit-content;
     margin-left: auto;
 		margin-right: auto;
-    text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
-    box-shadow: inset 0 -1px 0 0 hsla(360, 86%, 77%, 1), inset 0 -3px 0 0 hsla(360, 86%, 77%, 1);
+    /* text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
+    box-shadow: inset 0 -1px 0 0 hsla(360, 86%, 50%, 1), inset 0 -3px 0 0 hsla(360, 86%, 50%, 1); */
 }

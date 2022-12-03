@@ -1,10 +1,7 @@
 import {
 	FormControl,
 	FormLabel,
-	FormErrorMessage,
-	FormHelperText,
 	Textarea,
-	Button,
 } from '@chakra-ui/react'
 import { useForm } from 'react-hook-form'
 import ShakingButton from './ShakingButton'

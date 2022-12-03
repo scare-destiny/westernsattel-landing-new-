@@ -6,14 +6,27 @@ import {
 	VideoPlayer,
 	Marquee,
 	Animation,
-	BackgroundImage,
-	Product,
+	SaddleFeature,
+	CollectionGrid,
+	Section,
+	SectionTitle,
 } from '../components/index'
+import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import image from '../public/gallery5.webp'
-import enduranceImage from '../public/endurance-saddle.webp'
+import westernHero from '../public/westernSaddleHero.webp'
+import wadeHero from '../public/wadeSaddleHero.webp'
+import reinerHero from '../public/reinerHero.webp'
+import enduranceHero from '../public/endurance-saddle.webp'
+import westernBright1 from '../public/westernSaddleBright1.webp'
+import westernBright2 from '../public/westernSaddleBright2.webp'
+import westernBright3 from '../public/westernSaddleBright3.webp'
+import westernDark1 from '../public/westernSaddleDark1.webp'
+import westernDark2 from '../public/westernSaddleDark2.webp'
+import westernDark3 from '../public/westernSaddleDark3.webp'
+import SaddleTestimonials from '../components/SaddleTestimonials'
 
 const DynamicConfetti = dynamic(() => import('react-confetti'), {
 	ssr: false,
@@ -64,25 +77,55 @@ const ThankYou = () => {
 							placeholder='Ich suche einen Sattel für... '
 						/>
 					</Animation>
-					<BackgroundImage
-						image={enduranceImage}
+					{/* <BackgroundImage
+						image={enduranceHeroImage}
 						alt='le jardin shop'
 						backgroundPosition={'center center'}
 						objectPosition='right'
 						priority={true}
-					/>
+					/> */}
+					<Animation>
+						<Heading text='Unsere Westernsattelmodelle' />
+						<SectionTitle
+							text='Auch Jahre nach Kauf, zum Beispiel bei einem Wechsel des Pferdes, können Sie Ihren Westernsattel wieder neu anpassen.
+							Der Neukauf eines Sattels entfällt somit in der Regel. '
+						/>
+						<Marquee />
+					</Animation>
 					<Animation>
 						<Features />
 					</Animation>
+					<Animation>
+						<SaddleFeature
+							image={westernHero}
+							heading='LUXURY WESTERN'
+							text='Der kurze und leichte Westernsattel'
+							alt='Westernsattel Saddle'
+						/>
+					</Animation>
+					<CollectionGrid
+						title='Luxury Western dunkel'
+						subTitle='Herzstück des J. v. G. Luxury Western ist der Sattelbaum aus speziellem Kunststoff mit integriertem Titanstahl-Kopfeisen.'
+						firstImage={westernBright1}
+						secondImage={westernBright2}
+						thirdImage={westernBright3}
+					/>
+					<CollectionGrid
+						title='Luxury Western hell'
+						subTitle='Dieser Westernsattel ist nicht nur leicht, sondern er kann auch jederzeit neu angepasst werden.
+						Ein Pferdeleben lang!'
+						firstImage={westernDark1}
+						secondImage={westernDark2}
+						thirdImage={westernDark3}
+					/>
+					<Section />
+					<SaddleTestimonials />
 					<VideoPlayer
 						headingText='Ein Sattel ein Pferdeleben lang'
 						sectionText='Unsere Saettel werden auf Maß an das Pferd angepasst - auch späte noch, wenn sich das Pferd verändert:'
 						video='https://www.youtube.com/watch?v=GBtIThgwU3o'
 						light={true}
 					/>
-					{/* <Animation>
-						<Marquee />
-					</Animation> */}
 					<Animation>
 						<Banner
 							heading='	Haben Sie Fragen?'
