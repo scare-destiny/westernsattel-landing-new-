@@ -16,31 +16,49 @@ const Marquee = () => {
 		<div className='container-marquee'>
 			<div className='marquee'>
 				<div className='marquee__group'>
-					<ImageCaption text='LUXURY WESTERN'>
+					<ImageCaption
+						text='LUXURY WESTERN'
+						bottomText='Der Kurze und leichte Westernsattel'
+					>
 						<Image src={image1} alt='beautiful horse' />
 					</ImageCaption>
-					<ImageCaption text='LUXURY WADE'>
+					<ImageCaption text='LUXURY WADE' bottomText='Der Neue leichte und kurze'>
 						<Image src={image2} alt='beautiful horse' />
 					</ImageCaption>
-					<ImageCaption text='LUXURY REINER'>
+					<ImageCaption
+						text='LUXURY REINER'
+						bottomText='Ein Westernsattel durch und durch'
+					>
 						<Image src={image3} alt='beautiful horse' />
 					</ImageCaption>
-					<ImageCaption text='LUXURY ENDURANCE'>
+					<ImageCaption
+						text='LUXURY ENDURANCE'
+						bottomText='Der Westernsattel ohne Horn'
+					>
 						<Image src={image4} alt='beatiful horse' />
 					</ImageCaption>
 					{/* <Image src={image5} alt='beatiful horse' /> */}
 				</div>
 				<div aria-hidden='true' className='marquee__group'>
-					<ImageCaption text='LUXURY WESTERN'>
+					<ImageCaption
+						text='LUXURY WESTERN'
+						bottomText='Der Kurze und leichte Westernsattel'
+					>
 						<Image src={image1} alt='beautiful horse' />
 					</ImageCaption>
-					<ImageCaption text='LUXURY WADE'>
+					<ImageCaption text='LUXURY WADE' bottomText='Der Neue leichte und kurze'>
 						<Image src={image2} alt='beautiful horse' />
 					</ImageCaption>
-					<ImageCaption text='LUXURY REINER'>
+					<ImageCaption
+						text='LUXURY REINER'
+						bottomText='Ein Westernsattel durch und durch'
+					>
 						<Image src={image3} alt='beautiful horse' />
 					</ImageCaption>
-					<ImageCaption text='LUXURY ENDURANCE'>
+					<ImageCaption
+						text='LUXURY ENDURANCE'
+						bottomText='Der Westernsattel ohne Horn'
+					>
 						<Image src={image4} alt='beatiful horse' />
 					</ImageCaption>
 					{/* <Image src={image5} alt='beatiful horse' /> */}

@@ -10,6 +10,7 @@ import {
 	CollectionGrid,
 	Section,
 	SectionTitle,
+	Technical,
 } from '../components/index'
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
@@ -118,14 +119,23 @@ const ThankYou = () => {
 						secondImage={westernDark2}
 						thirdImage={westernDark3}
 					/>
-					<Section />
-					<SaddleTestimonials />
-					<VideoPlayer
-						headingText='Ein Sattel ein Pferdeleben lang'
-						sectionText='Unsere Saettel werden auf Maß an das Pferd angepasst - auch späte noch, wenn sich das Pferd verändert:'
-						video='https://www.youtube.com/watch?v=GBtIThgwU3o'
-						light={true}
-					/>
+					<Animation>
+						<Section />
+					</Animation>
+					<Animation>
+						<Technical />
+					</Animation>
+					<Animation>
+						<SaddleTestimonials />
+					</Animation>
+					<Animation>
+						<VideoPlayer
+							headingText='Ein Sattel ein Pferdeleben lang'
+							sectionText='Unsere Saettel werden auf Maß an das Pferd angepasst - auch späte noch, wenn sich das Pferd verändert:'
+							video='https://www.youtube.com/watch?v=GBtIThgwU3o'
+							light={true}
+						/>
+					</Animation>
 					<Animation>
 						<Banner
 							heading='	Haben Sie Fragen?'

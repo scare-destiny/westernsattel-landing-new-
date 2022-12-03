@@ -4,8 +4,8 @@ const ImageCaption = ({ children, text, bottomText }) => {
 			<p className='absolute m-auto w-400px h-400px left-2 text-gray-300	'>
 				{text}
 			</p>
-			<p className='absolute  m-auto w-400px h-400px bottom-3 pr-1 right-0  text-xs text-gray-400'>
-				Der Reiner von J. v. G. Saddle Innovations
+			<p className='absolute capitalize  m-auto w-400px h-400px bottom-3 pr-1 right-0  text-xs text-gray-400'>
+				{bottomText}
 			</p>
 			{children}
 		</div>

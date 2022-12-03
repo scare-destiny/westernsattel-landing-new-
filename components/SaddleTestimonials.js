@@ -1,17 +1,18 @@
 import Image from 'next/image'
 import westernsattelTestimonial from '../public/westernsattelTestimonial.jpg'
+import { Heading, ButtonComponent } from '../components/index'
 
 const SaddleTestimonials = () => {
 	return (
 		<div>
 			<section class='bg-white'>
-				<div class='mx-auto max-w-screen-xl px-4 py-4 sm:px-6 sm:py-12 lg:px-8'>
+				<div class='mx-auto max-w-screen-xl px-4 py-2 sm:px-6 sm:py-2 lg:px-8'>
 					<div class='mx-auto max-w-xl text-center'>
 						<h2 class='text-4xl font-bold tracking-tight sm:text-5xl'>
 							Das sagen unsere Kunden
 						</h2>{' '}
 					</div>
-					<div class='mt-4 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-16 lg:grid-cols-3'>
+					<div class='mt-4  '>
 						<div>
 							<Image
 								width='100'
@@ -85,6 +86,8 @@ const SaddleTestimonials = () => {
 									</svg>
 								</div>
 							</blockquote>
+							<Heading text='Interessieren Sie sich für den Westernsattel?' />
+							<ButtonComponent buttonText='Weitere Informationen' />
 						</div>
 					</div>
 				</div>
