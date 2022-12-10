@@ -1,48 +1,36 @@
 import Image from 'next/image'
-import westernsattelTestimonial from '../public/westernsattelTestimonial.jpg'
 import { Heading, ButtonComponent } from '../components/index'
 
-const SaddleTestimonials = () => {
+const SaddleTestimonials = ({
+	heading,
+	author,
+	image,
+	imageAlt,
+	subtitle,
+	text,
+	buttonHeading,
+	buttonText,
+}) => {
 	return (
 		<div>
 			<section class='bg-white'>
 				<div class='mx-auto max-w-screen-xl px-4 py-2 sm:px-6 sm:py-2 lg:px-8'>
 					<div class='mx-auto max-w-xl text-center'>
-						<h2 class='text-4xl font-bold tracking-tight sm:text-5xl'>
-							Das sagen unsere Kunden
-						</h2>{' '}
+						<h2 class='text-4xl font-bold tracking-tight sm:text-5xl'>{heading}</h2>{' '}
 					</div>
 					<div class='mt-4  '>
 						<div>
 							<Image
 								width='100'
 								height='100'
-								alt='Woman'
-								src={westernsattelTestimonial}
+								src={image}
+								alt={imageAlt}
 								class='mx-auto h-24 w-24 rounded-full object-cover shadow-xl'
 							/>
 							<blockquote class='-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl'>
-								<p class='text-lg font-bold text-gray-700'>Sophie Lennon</p>
-								<p class='mt-1 text-xs font-medium text-gray-500'>
-									DAS PERFEKTE WEIHNACHTSGESCHENK FÜR JULIA UND DAKOTA
-								</p>
-								<p class='mt-4 text-sm text-gray-500'>
-									Das perfekte Weihnachtsgeschenk wurde heute noch an Julia und Dakota
-									ausgeliefert. Es war eine kleine Herausforderung, da Dakota ein kurzer
-									Irish Cob ist.
-								</p>
-								<p class='mt-4 text-sm text-gray-500'>
-									Wir haben es mit einem schönen, schlichten Westernsattel mit
-									Butterflyskirt gelöst - so wird der Rücken schön
-									`&quot;`eingerahmt`&quot;` und vermeidet das Rutschen in der Bewegung.
-									Für den Reiter gibt es einen direkten Kontakt mit dem Bein zum Pferd.
-								</p>
-								<p class='mt-4 text-sm text-gray-500'>
-									An die Strips hinten kann man bei Bedarf auch mal Sattelpacktaschen
-									befestigen, wenn die Reise zu Pferd mal länger wird. Herzlichen
-									Glückwunsch nach Stadtallendorf und viele schöne Stunden mit dem neuen
-									Sattel.
-								</p>
+								<p class='text-lg font-bold text-gray-700'>{author}</p>
+								<p class='mt-1 text-xs font-medium text-gray-500'>{subtitle}</p>
+								<p class='mt-4 text-sm text-gray-500 leading-6'>{text}</p>
 								<div class='mt-8 flex justify-center gap-0.5 text-red-500'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
@@ -86,8 +74,8 @@ const SaddleTestimonials = () => {
 									</svg>
 								</div>
 							</blockquote>
-							<Heading text='Interessieren Sie sich für den Westernsattel?' />
-							<ButtonComponent buttonText='Weitere Informationen' />
+							<Heading text={buttonHeading} />
+							<ButtonComponent buttonText={buttonText} />
 						</div>
 					</div>
 				</div>

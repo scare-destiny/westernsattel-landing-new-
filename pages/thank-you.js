@@ -6,29 +6,20 @@ import {
 	VideoPlayer,
 	Marquee,
 	Animation,
-	SaddleFeature,
-	CollectionGrid,
-	Section,
 	SectionTitle,
-	Technical,
+	Western,
+	Wade,
+	Endurance,
+	Reiner,
 } from '../components/index'
 import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
 import image from '../public/gallery5.webp'
-import westernHero from '../public/westernSaddleHero.webp'
 import wadeHero from '../public/wadeSaddleHero.webp'
 import reinerHero from '../public/reinerHero.webp'
 import enduranceHero from '../public/endurance-saddle.webp'
-import westernBright1 from '../public/westernSaddleBright1.webp'
-import westernBright2 from '../public/westernSaddleBright2.webp'
-import westernBright3 from '../public/westernSaddleBright3.webp'
-import westernDark1 from '../public/westernSaddleDark1.webp'
-import westernDark2 from '../public/westernSaddleDark2.webp'
-import westernDark3 from '../public/westernSaddleDark3.webp'
-import SaddleTestimonials from '../components/SaddleTestimonials'
-
 const DynamicConfetti = dynamic(() => import('react-confetti'), {
 	ssr: false,
 })
@@ -61,7 +52,7 @@ const ThankYou = () => {
 '
 				/> */}
 				<Animation>
-					<Heading text='Vielen Dank, dass Sie die Preisliste angefordert haben, sie wird Ihnen sofort zugesandt ⚡️' />
+					<Heading text='Vielen Dank, die Preisliste wird Ihnen sofort zugesandt ⚡️' />
 				</Animation>
 				<div className='w-full border-box  pb-10mx-auto max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-4xl text-center'>
 					<Animation>
@@ -96,38 +87,10 @@ const ThankYou = () => {
 					<Animation>
 						<Features />
 					</Animation>
-					<Animation>
-						<SaddleFeature
-							image={westernHero}
-							heading='LUXURY WESTERN'
-							text='Der kurze und leichte Westernsattel'
-							alt='Westernsattel Saddle'
-						/>
-					</Animation>
-					<CollectionGrid
-						title='Luxury Western dunkel'
-						subTitle='Herzstück des J. v. G. Luxury Western ist der Sattelbaum aus speziellem Kunststoff mit integriertem Titanstahl-Kopfeisen.'
-						firstImage={westernBright1}
-						secondImage={westernBright2}
-						thirdImage={westernBright3}
-					/>
-					<CollectionGrid
-						title='Luxury Western hell'
-						subTitle='Dieser Westernsattel ist nicht nur leicht, sondern er kann auch jederzeit neu angepasst werden.
-						Ein Pferdeleben lang!'
-						firstImage={westernDark1}
-						secondImage={westernDark2}
-						thirdImage={westernDark3}
-					/>
-					<Animation>
-						<Section />
-					</Animation>
-					<Animation>
-						<Technical />
-					</Animation>
-					<Animation>
-						<SaddleTestimonials />
-					</Animation>
+					<Western />
+					<Wade />
+					<Endurance />
+					<Reiner />
 					<Animation>
 						<VideoPlayer
 							headingText='Ein Sattel ein Pferdeleben lang'

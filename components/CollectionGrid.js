@@ -47,13 +47,13 @@ const CollectionGrid = ({
 					</li>
 
 					<Animation>
-						<li class='lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1'>
-							<Image
-								src={thirdImage}
-								alt=''
-								class='object-contain w-full transition duration-500 aspect-square group-hover:opacity-90'
-							/>
-						</li>
+						{/* <li class='lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1'> */}
+						<Image
+							src={thirdImage}
+							alt=''
+							class='object-contain w-full transition duration-500 aspect-square group-hover:opacity-90'
+						/>
+						{/* </li> */}
 					</Animation>
 				</ul>
 			</div>
