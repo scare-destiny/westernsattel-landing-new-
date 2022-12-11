@@ -62,7 +62,7 @@ Unsere Westernsättel sind verstellbar - auch später noch
 					<Features />
 				</Animation>
 				<Animation>
-					<Hero image={heroImage2} width={608} height={321} priority={false} />
+					<Hero image={heroImage2} width={608} height={320} priority={false} />
 				</Animation>
 				<Animation>
 					<Services />
