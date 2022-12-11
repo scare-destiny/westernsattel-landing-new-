@@ -33,8 +33,9 @@ const Endurance = () => {
 				<SaddleFeature
 					image={enduranceHero}
 					objectPosition='center right'
-					heading='LUXURY WADE'
-					text='Der Westernsattel ohne Horn'
+					heading='LUXURY ENDURANCE'
+					text='Der Westernsattel ohne Horn
+					'
 					alt='Endurance Saddle'
 				/>
 			</Animation>

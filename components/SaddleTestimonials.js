@@ -13,28 +13,30 @@ const SaddleTestimonials = ({
 }) => {
 	return (
 		<div>
-			<section class='bg-white'>
-				<div class='mx-auto max-w-screen-xl px-4 py-2 sm:px-6 sm:py-2 lg:px-8'>
-					<div class='mx-auto max-w-xl text-center'>
-						<h2 class='text-4xl font-bold tracking-tight sm:text-5xl'>{heading}</h2>{' '}
+			<section className='bg-white'>
+				<div className='mx-auto max-w-screen-xl px-4 py-2 sm:px-6 sm:py-2 lg:px-8'>
+					<div className='mx-auto max-w-xl text-center'>
+						<h2 className='text-4xl font-bold tracking-tight sm:text-5xl'>
+							{heading}
+						</h2>{' '}
 					</div>
-					<div class='mt-4  '>
+					<div className='mt-4  '>
 						<div>
 							<Image
 								width='100'
 								height='100'
 								src={image}
 								alt={imageAlt}
-								class='mx-auto h-24 w-24 rounded-full object-cover shadow-xl'
+								className='mx-auto h-24 w-24 rounded-full object-cover shadow-xl'
 							/>
-							<blockquote class='-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl'>
-								<p class='text-lg font-bold text-gray-700'>{author}</p>
-								<p class='mt-1 text-xs font-medium text-gray-500'>{subtitle}</p>
-								<p class='mt-4 text-sm text-gray-500 leading-6'>{text}</p>
-								<div class='mt-8 flex justify-center gap-0.5 text-red-500'>
+							<blockquote className='-mt-6 flex flex-col justify-between rounded-lg p-12 text-center shadow-xl'>
+								<p className='text-lg font-bold text-gray-700'>{author}</p>
+								<p className='mt-1 text-xs font-medium text-gray-500'>{subtitle}</p>
+								<p className='mt-4 text-sm text-gray-500 leading-6'>{text}</p>
+								<div className='mt-8 flex justify-center gap-0.5 text-red-500'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
-										class='h-6 w-6'
+										className='h-6 w-6'
 										viewBox='0 0 20 20'
 										fill='currentColor'
 									>
@@ -42,7 +44,7 @@ const SaddleTestimonials = ({
 									</svg>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
-										class='h-6 w-6'
+										className='h-6 w-6'
 										viewBox='0 0 20 20'
 										fill='currentColor'
 									>
@@ -50,7 +52,7 @@ const SaddleTestimonials = ({
 									</svg>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
-										class='h-6 w-6'
+										className='h-6 w-6'
 										viewBox='0 0 20 20'
 										fill='currentColor'
 									>
@@ -58,7 +60,7 @@ const SaddleTestimonials = ({
 									</svg>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
-										class='h-6 w-6'
+										className='h-6 w-6'
 										viewBox='0 0 20 20'
 										fill='currentColor'
 									>
@@ -66,7 +68,7 @@ const SaddleTestimonials = ({
 									</svg>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
-										class='h-6 w-6'
+										className='h-6 w-6'
 										viewBox='0 0 20 20'
 										fill='currentColor'
 									>
@@ -74,8 +76,10 @@ const SaddleTestimonials = ({
 									</svg>
 								</div>
 							</blockquote>
-							<Heading text={buttonHeading} />
-							<ButtonComponent buttonText={buttonText} />
+							<div className='py-8'>
+								<Heading text={buttonHeading} />
+								<ButtonComponent buttonText={buttonText} />
+							</div>
 						</div>
 					</div>
 				</div>

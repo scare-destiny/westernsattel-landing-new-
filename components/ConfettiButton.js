@@ -9,6 +9,7 @@ const config = {
 	dragFriction: 0.12,
 	duration: 3000,
 	stagger: 3,
+	gravity: 0.4,
 	width: '10px',
 	height: '10px',
 	perspective: '500px',

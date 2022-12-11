@@ -35,84 +35,88 @@ const ThankYou = () => {
 	}, [])
 
 	return (
-		<div>
-			<Suspense fallback={`Loading...`}>
-				<DynamicConfetti
-					width={width}
-					height={height}
-					numberOfPieces={numberOfPieces}
-					run={run}
-				/>
-			</Suspense>
+		<>
+			<div>
+				<Suspense fallback={`Loading...`}>
+					<DynamicConfetti
+						width={width}
+						height={height}
+						numberOfPieces={numberOfPieces}
+						run={run}
+					/>
+				</Suspense>
 
-			{/* <Confetti width={width} height={height} numberOfPieces={50} /> */}
-			<div className=' border-box pt-6 pb-6 mx-auto max-w-md sm:max-w-xl w-full md:max-w-3xl lg:max-w-4xl'>
-				{/* <SectionTitle
+				{/* <Confetti width={width} height={height} numberOfPieces={50} /> */}
+				<div className=' border-box pt-6 pb-6 mx-auto max-w-md sm:max-w-xl w-full md:max-w-3xl lg:max-w-4xl'>
+					{/* <SectionTitle
 					text='Thank you for your request! Your course will be emailed to you right away ⚡️
 '
 				/> */}
-				<Animation>
-					<Heading text='Vielen Dank, die Preisliste wird Ihnen sofort zugesandt ⚡️' />
-				</Animation>
-				<div className='w-full border-box  pb-10mx-auto max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-4xl text-center'>
 					<Animation>
-						<Hero image={image} priority={true} />
+						<Heading text='Vielen Dank, die Preisliste wird Ihnen sofort zugesandt ⚡️' />
 					</Animation>
 					<Animation>
-						<Banner
-							heading='	Haben Sie Interesse an einem unserer Sattelmodelle?'
-							strongHeading='			 Jetzt unverbindlich beraten lassen.'
-							// text='Tailor-made services and high-level performance made for you.'
-							buttonText='Anfrage Senden'
-							formLabelText='Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!
+						<div className='py-4'>
+							<Heading text='Unsere Westernsattelmodelle' />
+							<Marquee />
+							<SectionTitle
+								text='Auch Jahre nach Kauf, zum Beispiel bei einem Wechsel des Pferdes, können Sie Ihren Westernsattel wieder neu anpassen.
+								Der Neukauf eines Sattels entfällt somit in der Regel. '
+							/>
+						</div>
+					</Animation>
+					<div className='w-full border-box  pb-10mx-auto max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-4xl text-center'>
+						{/* <Animation>
+							<Hero image={image} priority={true} />
+						</Animation> */}
+						<Animation>
+							<Banner
+								heading='	Haben Sie Interesse an einem unserer Sattelmodelle?'
+								strongHeading='			 Jetzt unverbindlich beraten lassen.'
+								// text='Tailor-made services and high-level performance made for you.'
+								buttonText='Anfrage Senden'
+								formLabelText='Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!
 							'
-							placeholder='Ich suche einen Sattel für... '
-						/>
-					</Animation>
-					{/* <BackgroundImage
+								placeholder='Ich suche einen Sattel für... '
+							/>
+						</Animation>
+						{/* <BackgroundImage
 						image={enduranceHeroImage}
 						alt='le jardin shop'
 						backgroundPosition={'center center'}
 						objectPosition='right'
 						priority={true}
 					/> */}
-					<Animation>
-						<Heading text='Unsere Westernsattelmodelle' />
-						<SectionTitle
-							text='Auch Jahre nach Kauf, zum Beispiel bei einem Wechsel des Pferdes, können Sie Ihren Westernsattel wieder neu anpassen.
-							Der Neukauf eines Sattels entfällt somit in der Regel. '
-						/>
-						<Marquee />
-					</Animation>
-					<Animation>
-						<Features />
-					</Animation>
-					<Western />
-					<Wade />
-					<Endurance />
-					<Reiner />
-					<Animation>
-						<VideoPlayer
-							headingText='Ein Sattel ein Pferdeleben lang'
-							sectionText='Unsere Saettel werden auf Maß an das Pferd angepasst - auch späte noch, wenn sich das Pferd verändert:'
-							video='https://www.youtube.com/watch?v=GBtIThgwU3o'
-							light={true}
-						/>
-					</Animation>
-					<Animation>
-						<Banner
-							heading='	Haben Sie Fragen?'
-							strongHeading='			 Lassen Sie es uns wissen.'
-							// text='Tailor-made services and high-level performance made for you.'
-							buttonText='Anfrage Senden'
-							formLabelText='Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!'
-							placeholder='Ich habe eine Frage zu Ihren Sätteln...'
-						/>
-					</Animation>
-					{/* <Product /> */}
+						<Animation>
+							<Features />
+						</Animation>
+						<Western />
+						<Endurance />
+						<Wade />
+						<Reiner />
+						<Animation>
+							<VideoPlayer
+								headingText='Ein Sattel ein Pferdeleben lang'
+								sectionText='Unsere Saettel werden auf Maß an das Pferd angepasst - auch späte noch, wenn sich das Pferd verändert:'
+								video='https://www.youtube.com/watch?v=GBtIThgwU3o'
+								light={true}
+							/>
+						</Animation>
+						<Animation>
+							<Banner
+								heading='	Haben Sie Fragen?'
+								strongHeading='			 Lassen Sie es uns wissen.'
+								// text='Tailor-made services and high-level performance made for you.'
+								buttonText='Anfrage Senden'
+								formLabelText='Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!'
+								placeholder='Ich habe eine Frage zu Ihren Sätteln...'
+							/>
+						</Animation>
+						{/* <Product /> */}
+					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	)
 }
 

@@ -7,12 +7,12 @@ import {
 	SaddleTestimonials,
 } from '../index.js'
 import westernHero from '../../public/westernSaddleHero.webp'
-import westernBright1 from '../../public/westernSaddleBright1.webp'
-import westernBright2 from '../../public/westernSaddleBright2.webp'
-import westernBright3 from '../../public/westernSaddleBright3.webp'
-import westernDark1 from '../../public/westernSaddleDark1.webp'
-import westernDark2 from '../../public/westernSaddleDark2.webp'
-import westernDark3 from '../../public/westernSaddleDark3.webp'
+import westernDark1 from '../../public/westernSaddleBright1.webp'
+import westernDark2 from '../../public/westernSaddleBright2.webp'
+import westernDark3 from '../../public/westernSaddleBright3.webp'
+import westernBright1 from '../../public/westernSaddleDark1.webp'
+import westernBright2 from '../../public/westernSaddleDark2.webp'
+import westernBright3 from '../../public/westernSaddleDark3.webp'
 import westernsattelTestimonial from '../../public/westernsattelTestimonial.jpg'
 
 const features = [
@@ -94,7 +94,7 @@ const Western = () => {
 			<Animation>
 				<SaddleTestimonials
 					heading='Das sagen unsere Kunden'
-					author='Sophie Lennon'
+					author='Julia'
 					image={westernsattelTestimonial}
 					imageAlt='Westernsattel Testimonial'
 					subtitle='DAS PERFEKTE WEIHNACHTSGESCHENK FÜR JULIA UND DAKOTA'

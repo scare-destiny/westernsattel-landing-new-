@@ -71,19 +71,19 @@ const BackgroundImage = ({
 				</VStack>
 				{/* </Flex> */}
 			</div>
-			<a href='#' class='group relative flex h-96 w-full items-end bg-black'>
+			<a href='#' className='group relative flex h-96 w-full items-end bg-black'>
 				<Image
 					width='600'
 					height='700'
 					alt='Bike'
 					src={image}
-					class='absolute inset-0 h-full w-full object-cover object-right transition-opacity group-hover:opacity-90'
+					className='absolute inset-0 h-full w-full object-cover object-right transition-opacity group-hover:opacity-90'
 				/>
 
-				<div class='relative w-full bg-red-700 p-6 text-center tracking-widest text-white transition-colors group-hover:bg-black sm:w-2/3'>
-					<h3 class='text-lg uppercase'>Custom Shop</h3>
+				<div className='relative w-full bg-red-700 p-6 text-center tracking-widest text-white transition-colors group-hover:bg-black sm:w-2/3'>
+					<h3 className='text-lg uppercase'>Custom Shop</h3>
 
-					<p class='mt-1 text-xs font-medium uppercase'>Design your own</p>
+					<p className='mt-1 text-xs font-medium uppercase'>Design your own</p>
 				</div>
 			</a>
 		</>

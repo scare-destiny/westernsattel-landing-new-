@@ -41,7 +41,7 @@ const Form = ({
 									className='input 
 		placeholder-gray-400 box-border w-full h-[64px] px-6 border-0 border-l border-r border-t mb-0 
 		font-ui text-base align-middle bg-white transition 
-		appearance-none font-light focus:outline-none focus:bg-gray-50 rounded-none
+		appearance-none font-light focus:outline-red-500 focus:bg-gray-50 rounded-none
 		 border-black/10 rounded-t-lg pl-[70px] svelte-1ruxt0u'
 									placeholder={emailPlaceholder}
 								/>
@@ -52,7 +52,7 @@ const Form = ({
 										type='checkbox'
 										required
 										name='checkbox'
-										className='accent-red-500 focus:accent-red-800 w-5 h-5 default:border-rose-600'
+										className='accent-red-500 focus:outline-red-500 w-5 h-5 default:border-rose-600'
 									/>
 								</div>
 								<style jsx>{`

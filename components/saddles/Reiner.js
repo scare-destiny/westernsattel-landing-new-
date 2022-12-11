@@ -9,7 +9,7 @@ import {
 import reinerHero from '../../public/reinerHero.webp'
 import reinerSaddle1 from '../../public/reinerSaddle1.webp'
 import reinerSaddle2 from '../../public/reinerSaddle2.webp'
-import reinerSaddle3 from '../../public/reinerSaddle2.webp'
+import reinerSaddle3 from '../../public/reinerSaddle3.webp'
 import reinerSaddleBraun1 from '../../public/reinerSaddleBraun1.webp'
 import reinerSaddleBraun2 from '../../public/reinerSaddleBraun2.webp'
 import reinerSaddleBraun3 from '../../public/reinerSaddleBraun3.webp'
@@ -82,18 +82,19 @@ const Reiner = () => {
 			<Animation>
 				<SaddleTestimonials
 					heading='Das sagen unsere Kunden'
-					author='Petra P.'
+					author='Maria'
 					image={reinerTestimonial}
 					imageAlt='Westernsattel Testimonial'
-					subtitle='UNSER NEUER SATTEL IST EIN TRAUM!'
-					text='Das Warten hat sich absolut gelohnt - unser neuer Sattel ist ein Traum!
+					subtitle='WIEDER DURFTEN WIR EIN "MENSCH-PFERD-TEAM" GLÜCKLICH MACHEN 😍'
+					text='Gewählt wurde das Modell Reiner, der hier sehr schön passend zum Pferd zusammengestellt wurde.
 
-					Er drückt nicht, liegt bombig und ist perfekt angepasst auf den kurzen, geschwungenen Rücken meiner Stute Carla.
+					Das Schokobraun von "Peponitas Bay" AKA Peppo wurde als Grundfarbe des Sattels gewählt und der Sitz - passend zu Peppo´s Mähne - in schwarz.
 					
-					Super bequem zu sitzen und auch für eine kleine Person für mich leicht zu heben und zu handhaben!
+					Aufgehübscht wurde der Sattel mit unseren Texasstern-Conchas, einem großen D-Ring am Backjockey und den Strings, wo man auch mal Packtaschen befestigen kann, wenn´s mal ein längerer Ritt ins Gelände wird.
 					
-					Danke Susanne für die ausführliche und einfühlsame Beratung - sollte die Süße noch stark aufmuskeln oder sonst verändern, melden wir uns gerne - bei einem JvG Sattel ja Gott sei dank kein Problem!'
-					buttonHeading='Interessieren Sie sich für den Endurance Sattel?'
+					Nicht nur für die Optik hat sich die Besitzerin für eine Borderstamp rund um den Sattel entschieden. Das Borderstamp hat auch den Vorteil, dass es das Leder "Formstabil" hält. Leder ist ein Naturprodukt, jede Haut ist anders und was Besonderes, reagiert aber auf die Körperwärme von Mensch und Pferd und passt sich dann auch an.
+					
+					Wir wünschen Maria und Peppo viele schöne Stunden in dem neuen Schmuckstück.'
 					buttonText='Weitere Informationen'
 				/>
 			</Animation>

@@ -1,20 +1,20 @@
 const Technical = ({ heading, features }) => {
 	return (
-		<div class='container py-2 px-6 mx-auto'>
-			<section class=' text-gray-800'>
-				<div class='flex flex-center justify-center'>
-					<div class='text-center max-w-[700px] '>
-						<h2 class='text-3xl font-bold mb-4 '>{heading}</h2>
+		<div className='container py-2 px-6 mx-auto'>
+			<section className=' text-gray-800'>
+				<div className='flex flex-center justify-center'>
+					<div className='text-center max-w-[700px] '>
+						<h2 className='text-3xl font-bold mb-4 '>{heading}</h2>
 					</div>
 				</div>
 
-				<div class='grid md:grid-cols-2 lg:grid-cols-4 gap-x-4 xl:gap-x-4'>
+				<div className='grid md:grid-cols-2 lg:grid-cols-4 gap-x-4 xl:gap-x-4'>
 					{features.map((feature, i) => (
-						<div key={i} class='mb-4 m-auto'>
-							<div class='flex'>
-								<div class='shrink-0 mt-1'>
+						<div key={i} className='mb-4 m-auto'>
+							<div className='flex'>
+								<div className='shrink-0 mt-1'>
 									<svg
-										class='w-4 h-4 text-red-600'
+										className='w-4 h-4 text-red-600'
 										xmlns='http://www.w3.org/2000/svg'
 										viewBox='0 0 512 512'
 									>
@@ -24,8 +24,8 @@ const Technical = ({ heading, features }) => {
 										></path>
 									</svg>
 								</div>
-								<div class='grow ml-4'>
-									<p class='font-bold mb-1'>{feature}</p>
+								<div className='grow ml-4'>
+									<p className='font-bold mb-1'>{feature}</p>
 								</div>
 							</div>
 						</div>

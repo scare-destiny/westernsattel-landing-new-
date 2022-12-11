@@ -17,7 +17,10 @@ const VideoPlayer = ({
 		<>
 			{headingText
 				? // eslint-disable-next-line react/jsx-key
-				  [<Heading text={headingText} />, <SectionTitle text={sectionText} />]
+				  [
+						<Heading text={headingText} key='1' />,
+						<SectionTitle text={sectionText} key='2' />,
+				  ]
 				: null}
 			<div className='border-box  pb-2 mx-auto max-w-md  w-full  lg:max-w-4xl'>
 				<div className='player-wrapper'>

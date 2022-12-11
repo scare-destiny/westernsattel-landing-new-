@@ -73,7 +73,7 @@ const Wade = () => {
 					subtitle='DER FÜHLT SICH AN, WIE EINE ZWEITE HAUT!					'
 					text='Hallo!
 					Mein Name ist *Smart Shining Cherry*, bin 3 Jahre alt und hab jetzt einen meeeega tollen Sattel von *JvG*! Der wurde mir angepasst, ist extrem leicht und zwickt überhaupt nicht! Gerade für mich als Jungspund ist das super! Der fühlt sich an, wie eine zweite Haut! Es macht richtig Spaß, den rumzutragen. Und das Tolle ist, auch wenn ich mal mehr Möhrchen fresse oder mal so ein richtiger Bodybuilder werde, kann mein wunderschöner Sattel immer wieder neu angepasst werden! Da hat sich mein Frauchen was ganz Tolles für mich bauen lassen! Danke JvG, dass ihr die Wünsche und Vorstellungen von mir und meinem Frauchen so toll umgesetzt habt!
-					Eure Cherry'
+					'
 					buttonHeading='Sind Sie an diesem Sattel interessiert?'
 					buttonText='Weitere Informationen'
 				/>
