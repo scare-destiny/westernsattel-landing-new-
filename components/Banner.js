@@ -69,10 +69,9 @@ const Banner = ({
 								<span style={{ fontSize: '24px' }}>📞</span>
 							</u>
 							<input
-								type='text'
+								type='tel'
 								id='phone'
 								name='phone'
-								pattern='[0-9]*'
 								required
 								className='input 
 		placeholder-gray-400 box-border w-full h-[64px] px-6 border-b border-l border-r border-t mb-0 
