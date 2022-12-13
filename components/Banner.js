@@ -7,6 +7,7 @@ const Banner = ({
 	heading,
 	strongHeading,
 	text,
+	email,
 	buttonText,
 	secondButtonText,
 	formLabelText,
@@ -43,6 +44,7 @@ const Banner = ({
 						<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
 							<span style={{ fontSize: '24px' }}>📞</span>
 						</u>
+						<input type='text' id='email' name='email' />
 						<input
 							name='number'
 							type='number'

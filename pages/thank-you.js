@@ -25,14 +25,15 @@ const ThankYou = () => {
 	const [run, setRun] = useState(true)
 	const [numberOfPieces, setNumberOfPieces] = useState(200)
 
+	const [email, setEmail] = useState('')
+
 	useEffect(() => {
 		setTimeout(() => setNumberOfPieces(0), 3000)
 		setTimeout(() => setRun(false), 7000)
 	}, [])
 
 	useEffect(() => {
-		const data = window.localStorage.getItem('email')
-		console.log(data)
+		setEmail(window.localStorage.getItem('email'))
 	}, [])
 
 	return (
@@ -73,6 +74,7 @@ const ThankYou = () => {
 								formLabelText='Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!
 							'
 								placeholder='Ich suche einen Sattel für... '
+								email={email}
 							/>
 						</Animation>
 						{/* <BackgroundImage
