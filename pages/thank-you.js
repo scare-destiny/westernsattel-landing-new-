@@ -1,5 +1,4 @@
 import {
-	Hero,
 	Heading,
 	Features,
 	Banner,
@@ -7,6 +6,7 @@ import {
 	Marquee,
 	Animation,
 	SectionTitle,
+	ContactFormModal,
 	Western,
 	Wade,
 	Endurance,
@@ -16,10 +16,6 @@ import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import { Suspense } from 'react'
-import image from '../public/gallery5.webp'
-import wadeHero from '../public/wadeSaddleHero.webp'
-import reinerHero from '../public/reinerHero.webp'
-import enduranceHero from '../public/endurance-saddle.webp'
 const DynamicConfetti = dynamic(() => import('react-confetti'), {
 	ssr: false,
 })
@@ -45,13 +41,7 @@ const ThankYou = () => {
 						run={run}
 					/>
 				</Suspense>
-
-				{/* <Confetti width={width} height={height} numberOfPieces={50} /> */}
 				<div className=' border-box pt-6 pb-6 mx-auto max-w-md sm:max-w-xl w-full md:max-w-3xl lg:max-w-4xl'>
-					{/* <SectionTitle
-					text='Thank you for your request! Your course will be emailed to you right away ⚡️
-'
-				/> */}
 					<Animation>
 						<Heading text='Vielen Dank, die Preisliste wird Ihnen sofort zugesandt ⚡️' />
 					</Animation>
@@ -113,6 +103,7 @@ const ThankYou = () => {
 							/>
 						</Animation>
 						{/* <Product /> */}
+						<ContactFormModal />
 					</div>
 				</div>
 			</div>
