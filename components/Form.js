@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import ButtonComponent from './ButtonComponent'
 
 const Form = ({
@@ -8,6 +9,12 @@ const Form = ({
 	buttonText,
 	bottomText,
 }) => {
+	const [email, setEmail] = useState('')
+
+	useEffect(() => {
+		window.localStorage.setItem('email', JSON.stringify(email))
+	}, [email])
+
 	return (
 		<>
 			<div className='formContainer w-full border-box pt-2 pl-6 pr-6 pb-2'>
@@ -44,6 +51,7 @@ const Form = ({
 		appearance-none font-light focus:outline-red-500 focus:bg-gray-50 rounded-none
 		 border-black/10 rounded-t-lg pl-[70px] svelte-1ruxt0u'
 									placeholder={emailPlaceholder}
+									onChange={(e) => setEmail(e.target.value)}
 								/>
 							</div>
 							<div className='wrapper checkbox flex items-center px-6 min-h-[68px] relative box-border overflow-hidden bg-white border-t border-l border-r border-b rounded-b-lg border-black/10'>

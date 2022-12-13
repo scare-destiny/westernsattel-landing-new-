@@ -30,6 +30,11 @@ const ThankYou = () => {
 		setTimeout(() => setRun(false), 7000)
 	}, [])
 
+	useEffect(() => {
+		const data = window.localStorage.getItem('email')
+		console.log(data)
+	}, [])
+
 	return (
 		<>
 			<div>
