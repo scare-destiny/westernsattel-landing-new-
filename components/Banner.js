@@ -1,4 +1,6 @@
 /* eslint-disable react/no-children-prop */
+import { AiTwotoneMail } from 'react-icons/ai'
+import { BsTelephoneFill, BsFillSignpostFill } from 'react-icons/bs'
 import { FormControl, FormLabel, Textarea } from '@chakra-ui/react'
 import { useForm } from 'react-hook-form'
 import ShakingButton from './ShakingButton'
@@ -49,7 +51,7 @@ const Banner = ({
 						/>
 						<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg mt-4'>
 							<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
-								<span style={{ fontSize: '24px' }}>✉️</span>
+								<AiTwotoneMail className='text-red-700 h-5 w-5 ' />
 							</u>
 							<input
 								type='text'
@@ -66,7 +68,7 @@ const Banner = ({
 						</div>
 						<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg mt-4'>
 							<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
-								<span style={{ fontSize: '24px' }}>📞</span>
+								<BsTelephoneFill className='text-red-700 h-5 w-5 ' />
 							</u>
 							<input
 								type='tel'
@@ -83,7 +85,7 @@ const Banner = ({
 						</div>
 						<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg mt-4'>
 							<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
-								<span style={{ fontSize: '24px' }}>📨</span>
+								<BsFillSignpostFill className='text-red-700 h-5 w-5 ' />
 							</u>
 							<input
 								type='text'
