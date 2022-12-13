@@ -69,7 +69,7 @@ const Banner = ({
 								<span style={{ fontSize: '24px' }}>📞</span>
 							</u>
 							<input
-								type='text'
+								type='number'
 								id='phone'
 								name='phone'
 								required
