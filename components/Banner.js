@@ -42,9 +42,25 @@ const Banner = ({
 					/>
 					<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg mt-4'>
 						<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
+							<span style={{ fontSize: '24px' }}>✉️</span>
+						</u>
+						<input
+							type='text'
+							name='email'
+							value={email}
+							required
+							className='input 
+		placeholder-gray-400 box-border w-full h-[64px] px-6 border-b border-l border-r border-t mb-0 
+		font-ui text-base align-middle bg-white transition 
+		appearance-none font-light focus:outline-red-500 focus:bg-gray-50 rounded-none
+		 border-black/10 rounded-t-lg pl-[70px] '
+							placeholder='Email'
+						/>
+					</div>
+					<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg mt-4'>
+						<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
 							<span style={{ fontSize: '24px' }}>📞</span>
 						</u>
-						<input type='text' id='email' name='email' />
 						<input
 							name='number'
 							type='number'

@@ -25,7 +25,7 @@ const ThankYou = () => {
 	const [run, setRun] = useState(true)
 	const [numberOfPieces, setNumberOfPieces] = useState(200)
 
-	const [email, setEmail] = useState('')
+	const [email, setEmail] = useState()
 
 	useEffect(() => {
 		setTimeout(() => setNumberOfPieces(0), 3000)
@@ -33,7 +33,7 @@ const ThankYou = () => {
 	}, [])
 
 	useEffect(() => {
-		setEmail(window.localStorage.getItem('email'))
+		setEmail(JSON.parse(window.localStorage.getItem('email')))
 	}, [])
 
 	return (
