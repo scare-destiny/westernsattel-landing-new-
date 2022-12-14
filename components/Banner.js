@@ -51,7 +51,7 @@ const Banner = ({
 						/>
 						<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg mt-4'>
 							<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
-								<AiTwotoneMail className='text-red-700 h-5 w-5 ' />
+								<AiTwotoneMail className=' h-5 w-5 ' />
 							</u>
 							<input
 								type='text'
@@ -68,7 +68,7 @@ const Banner = ({
 						</div>
 						<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg mt-4'>
 							<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
-								<BsTelephoneFill className='text-red-700 h-5 w-5 ' />
+								<BsTelephoneFill className='h-5 w-5 ' />
 							</u>
 							<input
 								type='tel'
@@ -85,7 +85,7 @@ const Banner = ({
 						</div>
 						<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg mt-4'>
 							<u className='absolute no-underline h-[18px] left-6 select-none flex items-center'>
-								<BsFillSignpostFill className='text-red-700 h-5 w-5 ' />
+								<BsFillSignpostFill className=' h-5 w-5 ' />
 							</u>
 							<input
 								type='text'

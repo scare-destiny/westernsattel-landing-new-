@@ -21,6 +21,7 @@ import {
 	AccordionIcon,
 } from '@chakra-ui/react'
 import Cookies from 'js-cookie'
+// A lot of size for the NextLink component, should I update it?
 import NextLink from 'next/link'
 
 const CookieBanner = ({ modalHeader, modalText }) => {
