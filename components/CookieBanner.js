@@ -42,6 +42,10 @@ const CookieBanner = ({ modalHeader, modalText }) => {
 	const generateClientConsentCookie = () => {
 		if (!isClientConsentCookieExists()) {
 			Cookies.set('COOKIE_CONSENT_PERMISSION', 'true')
+			gtag('consent', 'update', {
+				ad_storage: 'granted',
+				analytics_storage: 'granted',
+			})
 		}
 	}
 
