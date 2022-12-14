@@ -38,19 +38,21 @@ function MyApp({ Component, pageProps }) {
 					}}
 				/>
 
-				{consent === true && (
-					<Script
-						id='consupd'
-						strategy='afterInteractive'
-						dangerouslySetInnerHTML={{
-							__html: `
+				{consent && (
+					<>
+						<Script
+							id='consupd'
+							strategy='afterInteractive'
+							dangerouslySetInnerHTML={{
+								__html: `
             gtag('consent', 'update', {
               'ad_storage': 'granted',
               'analytics_storage': 'granted'
             });
           `,
-						}}
-					/>
+							}}
+						/>
+					</>
 				)}
 				<Layout>
 					<main className={assistant.className}>
