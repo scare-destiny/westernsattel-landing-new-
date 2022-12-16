@@ -58,7 +58,7 @@ const Banner = ({
 								name='email'
 								value={email}
 								required
-								className='input 
+								className='input italic
 		placeholder-gray-400 box-border w-full h-[64px] px-6 border-b border-l border-r border-t mb-0 
 		font-ui text-base align-middle bg-white transition 
 		appearance-none font-light focus:outline-red-500 focus:bg-gray-50 rounded-none

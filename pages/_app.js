@@ -2,12 +2,14 @@ import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 import Cookies from 'js-cookie'
 import '../styles/globals.css'
-import { Assistant } from '@next/font/google'
+// Can Also Try Assistant, Mulish,
+import { Fraunces } from '@next/font/google'
+
 import { CookieConsentProvider } from '@use-cookie-consent/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import Layout from '../components/layout'
 
-const assistant = Assistant({ subsets: ['latin'] })
+const fraunces = Fraunces({ subsets: ['latin'] })
 
 const consent = Cookies.get('COOKIE_CONSENT_PERMISSION')
 
@@ -55,7 +57,7 @@ function MyApp({ Component, pageProps }) {
 					</>
 				)}
 				<Layout>
-					<main className={assistant.className}>
+					<main className={fraunces.className}>
 						<Component {...pageProps} />
 					</main>
 					<Analytics />
