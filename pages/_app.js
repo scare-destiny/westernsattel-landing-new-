@@ -9,7 +9,7 @@ import { CookieConsentProvider } from '@use-cookie-consent/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import Layout from '../components/layout'
 
-const fraunces = Fraunces({ subsets: ['latin'] })
+const fraunces = Fraunces({ subsets: ['latin'], display: 'swap' })
 
 const consent = Cookies.get('COOKIE_CONSENT_PERMISSION')
 
