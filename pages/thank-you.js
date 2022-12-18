@@ -107,10 +107,11 @@ const ThankYou = () => {
 								buttonText='Anfrage Senden'
 								formLabelText='Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!'
 								placeholder='Ich habe eine Frage zu Ihren Sätteln...'
+								email={email}
 							/>
 						</Animation>
 						{/* <Product /> */}
-						<ContactFormModal />
+						{/* <ContactFormModal /> */}
 					</div>
 				</div>
 			</div>

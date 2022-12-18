@@ -8,7 +8,6 @@ import {
 	Services,
 	VideoPlayer,
 	Info,
-	Divider,
 	Animation,
 } from '../components/index.js'
 import heroImage from '../public/hero-image.webp'
@@ -20,6 +19,8 @@ const DynamicTestimonials = dynamic(
 		suspense: true,
 	}
 )
+
+
 
 export default function Home() {
 	return (
@@ -38,7 +39,10 @@ Unsere Westernsättel sind verstellbar - auch später noch
 			<main className='w-screen'>
 				<Animation>
 					<Hero image={heroImage} width={608} height={321} priority={true} />
-					<Heading text='WESTERNSATTEL KURZ, LEICHT UND JEDERZEIT ANPASSBAR' />
+					<Heading
+		
+						text='WESTERNSATTEL KURZ, LEICHT UND JEDERZEIT ANPASSBAR'
+					/>
 				</Animation>
 				<Animation>
 					<Form
