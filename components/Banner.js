@@ -57,7 +57,7 @@ const Banner = ({
 							<input
 								type='text'
 								name='email'
-								value={email}
+								defaultValue={email}
 								required
 								className='input 
 		placeholder-gray-400 box-border w-full h-[64px] px-6 border-b border-l border-r border-t mb-0 

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import ButtonComponent from './ButtonComponent'
 
 const Form = ({
+	id,
 	description,
 	strongDescription,
 	emailPlaceholder,
@@ -33,7 +34,7 @@ const Form = ({
 						<form
 							method='POST'
 							action='https://ingbrohansthoma.activehosted.com/proc.php'
-							id='_form_130_'
+							id={id}
 							className='_form _form_130 _inline-form '
 						>
 							<div className='wrapper flex items-center relative box-border overflow-hidden rounded-t-lg'>

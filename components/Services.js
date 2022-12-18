@@ -7,6 +7,14 @@ import Heading from './Heading'
 import ButtonComponent from './ButtonComponent'
 
 const Services = () => {
+	const handleClickScroll = () => {
+		const element = document.getElementById('bottom-pricelist')
+		if (element) {
+			// 👇 Will scroll smoothly to the top of the next section
+			element.scrollIntoView({ behavior: 'smooth' })
+		}
+	}
+
 	return (
 		<section className='text-gray-600 body-font'>
 			<div className='w-full container py-2 mx-auto'>
@@ -56,7 +64,10 @@ const Services = () => {
 					</div>
 				</div>
 				<div className='formContainer w-full border-box pt-2 pl-6 pr-6 pb-2'>
-					<ButtonComponent buttonText='Preisliste runter laden' />
+					<ButtonComponent
+						buttonText='Preisliste runter laden'
+						handler={handleClickScroll}
+					/>
 				</div>
 			</div>
 		</section>
