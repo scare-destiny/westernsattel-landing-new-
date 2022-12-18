@@ -1,4 +1,4 @@
-const ButtonComponent = ({ buttonText }) => {
+const ButtonComponent = ({ buttonText, handler }) => {
 	return (
 		<div className='mx-auto max-w-xl  sm:max-w-xl w-full mt-4'>
 			<button
@@ -11,9 +11,7 @@ const ButtonComponent = ({ buttonText }) => {
 				 bg-buttonBgColor
 				 hover:bg-buttonBgColorDark
 				 '
-				onClick={() => {
-					console.log('test')
-				}}
+				onClick={handler}
 			>
 				{buttonText}
 			</button>

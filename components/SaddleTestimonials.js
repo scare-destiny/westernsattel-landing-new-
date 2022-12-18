@@ -11,6 +11,14 @@ const SaddleTestimonials = ({
 	buttonHeading,
 	buttonText,
 }) => {
+	const handleClickScroll = () => {
+		const element = document.getElementsByClassName('bottom-form')[0]
+		if (element) {
+			// 👇 Will scroll smoothly to the top of the next section
+			element.scrollIntoView({ behavior: 'smooth' })
+		}
+	}
+
 	return (
 		<div>
 			<section className='bg-white'>
@@ -78,7 +86,7 @@ const SaddleTestimonials = ({
 							</blockquote>
 							<div className='py-8'>
 								<Heading text={buttonHeading} />
-								<ButtonComponent buttonText={buttonText} />
+								<ButtonComponent buttonText={buttonText} handler={handleClickScroll} />
 							</div>
 						</div>
 					</div>
