@@ -31,6 +31,7 @@ export default function Home() {
 Unsere Westernsättel sind verstellbar - auch später noch
 '
 				/>
+				<meta name='robots' content='noindex,nofollow' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 

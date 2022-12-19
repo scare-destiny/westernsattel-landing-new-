@@ -38,6 +38,17 @@ const ThankYou = () => {
 
 	return (
 		<>
+			<Head>
+				<title>WESTERNSATTEL — Danke für Ihre Anfrage</title>
+				<meta
+					name='description'
+					content='
+					Vielen Dank, die Preisliste wird Ihnen sofort zugesandt
+'
+				/>
+				<meta name='robots' content='noindex,nofollow' />
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
 			<div>
 				<Suspense fallback={`Loading...`}>
 					<DynamicConfetti
@@ -108,7 +119,7 @@ const ThankYou = () => {
 								formLabelText='Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen zurück!'
 								placeholder='Ich habe eine Frage zu Ihren Sätteln...'
 								email={email}
-								className='bottom-form'
+								className='botto'
 							/>
 						</Animation>
 						{/* <Product /> */}
