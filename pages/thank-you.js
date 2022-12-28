@@ -46,7 +46,6 @@ const ThankYou = () => {
 					Vielen Dank, die Preisliste wird Ihnen sofort zugesandt
 '
 				/>
-				<meta name='robots' content='noindex,nofollow' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<div>
