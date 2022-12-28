@@ -12,7 +12,7 @@ const SaddleTestimonials = ({
 	buttonText,
 }) => {
 	const handleClickScroll = () => {
-		const element = document.getElementsByClassName('bottom-form')[0]
+		const element = document.getElementById('bottom-kontaktform')
 		if (element) {
 			// 👇 Will scroll smoothly to the top of the next section
 			element.scrollIntoView({ behavior: 'smooth' })
