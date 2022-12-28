@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import ShakingButton from './ShakingButton'
 
 const Banner = ({
+	id,
 	heading,
 	strongHeading,
 	text,
@@ -40,7 +41,8 @@ const Banner = ({
 				<form
 					method='POST'
 					action='https://ingbrohansthoma.activehosted.com/proc.php'
-					id='_form_132_'
+					className='kontaktform'
+					id={id}
 				>
 					<FormControl py={2} px={2}>
 						<Textarea

@@ -78,6 +78,7 @@ const ThankYou = () => {
 						</Animation> */}
 						<Animation>
 							<Banner
+								id='top-kontaktform'
 								heading='	Haben Sie Interesse an einem unserer Sattelmodelle?'
 								strongHeading='			 Jetzt unverbindlich beraten lassen.'
 								// text='Tailor-made services and high-level performance made for you.'
@@ -112,6 +113,7 @@ const ThankYou = () => {
 						</Animation>
 						<Animation>
 							<Banner
+								id='bottom-kontaktform'
 								heading='	Haben Sie Fragen?'
 								strongHeading='			 Lassen Sie es uns wissen.'
 								// text='Tailor-made services and high-level performance made for you.'
