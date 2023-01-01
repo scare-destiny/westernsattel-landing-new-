@@ -31,7 +31,7 @@ export default function Home() {
 Unsere Westernsättel sind verstellbar - auch später noch
 '
 				/>
-				<link rel='icon' href='/favicon-westernsattel.ico' />
+				<link rel='icon' href='/JVG-Saddle-Innovations-Logo.png' />
 			</Head>
 
 			<main className='w-screen'>
