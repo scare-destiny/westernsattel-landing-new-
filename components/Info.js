@@ -105,8 +105,8 @@ const Info = () => {
 						rounded={'md'}
 						alt={'feature image'}
 						src={image}
-						width='425'
-						height='500'
+						width='840'
+						height='714'
 						objectFit={'contain'}
 					/>
 				</Flex>
