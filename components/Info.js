@@ -4,6 +4,7 @@ import {
 	Flex,
 	Heading,
 	Text,
+	Button,
 	Stack,
 	StackDivider,
 	Icon,
@@ -36,11 +37,24 @@ const Feature = ({ text, icon, iconBg }) => {
 }
 
 const Info = () => {
+	const handleClickScroll = () => {
+		const element = document.getElementById('bottom-pricelist')
+		if (element) {
+			// 👇 Will scroll smoothly to the top of the next section
+			element.scrollIntoView({ behavior: 'smooth' })
+		}
+	}
+
 	return (
 		<Container maxW={'8xl'} py={2}>
 			<SimpleGrid columns={{ base: 1, md: 2 }} spacing={5}>
 				<Stack spacing={4}>
-					<Text
+					<Button
+						onClick={handleClickScroll}
+						_hover={{
+							background: 'white',
+							color: 'red.200',
+						}}
 						textTransform={'uppercase'}
 						color={'red.400'}
 						fontWeight={600}
@@ -51,7 +65,7 @@ const Info = () => {
 						rounded={'md'}
 					>
 						Preisliste anfordern
-					</Text>
+					</Button>
 					<Heading>Preisliste und Datenblätter anfordern</Heading>
 					<Text color={'gray.500'} fontSize={'lg'}>
 						Nach Eintragung in unsere Mailingliste bekommen Sie automatisch:
@@ -91,9 +105,9 @@ const Info = () => {
 						rounded={'md'}
 						alt={'feature image'}
 						src={image}
-						width='720'
-						height='840'
-						objectFit={'cover'}
+						width='425'
+						height='500'
+						objectFit={'contain'}
 					/>
 				</Flex>
 			</SimpleGrid>
