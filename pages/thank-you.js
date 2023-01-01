@@ -46,7 +46,7 @@ const ThankYou = () => {
 					Vielen Dank, die Preisliste wird Ihnen sofort zugesandt
 '
 				/>
-				<link rel='icon' href='/favicon.ico' />
+				<link rel='icon' href='/favicon-westernsattel.ico' />
 			</Head>
 			<div>
 				<Suspense fallback={`Loading...`}>
